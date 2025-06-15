@@ -9,8 +9,16 @@ body {
     flex-direction: column;
     align-items: center;
     font-family: "Adwaita Mono", monospace;
-    background-color: rebeccapurple;
+    background: #bd537c;
+    background: linear-gradient(90deg,rgba(189, 83, 124, 1) 0%, rgba(121, 9, 72, 1) 35%, rgba(106, 0, 255, 1) 100%);
 }
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 
 nav {
     display: flex;
@@ -22,9 +30,23 @@ nav {
     background-color: black;
     color: white;
 }
+nav button {
+    background-color: #bd537c;
+    background: linear-gradient(90deg,rgba(189, 83, 124, 1) 0%, rgba(121, 9, 72, 1) 35%, rgba(106, 0, 255, 1) 100%);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
 
-div#contact {
+div#content {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-evenly;
+}
+#content h1 {
 }
