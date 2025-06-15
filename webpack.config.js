@@ -11,7 +11,7 @@ module.exports = {
     },
     plugins: [
         new HtmlWebpackPlugin({
-            template: "./src/template/index.html",
+            template: "./src/template.html",
         }),
     ],
     module: {
@@ -20,6 +20,10 @@ module.exports = {
                 test: /\.css$/i,
                 use: ['style-loader', 'css-loader'],
             },
+            {
+                test: /\.html$/i,
+                loader: 'html-loader',
+            }
         ],
     },
 }
