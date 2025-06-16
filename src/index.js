@@ -1,4 +1,6 @@
 import './styles.css';
-console.log("Test");
+import { load_page } from './load_page';
 
-const content = document.getElementById('content');
+document.addEventListener('DOMContentLoaded', () => {
+    load_page();
+});
