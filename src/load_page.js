@@ -11,9 +11,9 @@ export function load_page() {
     img.height = "200px";
     content.appendChild(img);
 
-    const about = document.createElement('section');
-    about.id = "about";
-    about.innerHTML = `
+    const home = document.createElement('section');
+    home.id = "home";
+    home.innerHTML = `
         <h2>About Us</h2>
         <p>
             Welcome to Abrom's Steakhouse, where every meal is a celebration of flavor and tradition. <br>
@@ -22,7 +22,7 @@ export function load_page() {
             At Abrom's, we believe in crafting memorable moments around exceptional food. <br>
         </p>
     `;
-    content.appendChild(about);
+    content.appendChild(home);
 
     // Apply styles
     content.id = "content";
