@@ -86,7 +86,7 @@ export function load_contact() {
         const emailLink = contact.querySelector('a[href^="mailto:"]');
 
         if (phoneLink) {
-            phoneLink.addEventListener('click', (e) => {
+            phoneLink.addEventListener('click', () => {
                 console.log('Phone link clicked');
             });
         }
