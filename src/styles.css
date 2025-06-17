@@ -18,7 +18,7 @@ body {
     font-family: "Adwaita Mono", monospace;
     background: #FFFFFF;
     background: var(--grad-color3), var(--grad-color2);
-    font-family: var(--my-font, sans-serif);
+    font-family: var(--my-font, monospace);
 }
 
 header {
