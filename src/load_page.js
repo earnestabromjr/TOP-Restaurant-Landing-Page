@@ -1,5 +1,6 @@
 export function load_page() {
     const content = document.getElementById('content');
+    content.innerHTML = '';
 
     // Create a h1 element
     const h1 = document.createElement('h1');

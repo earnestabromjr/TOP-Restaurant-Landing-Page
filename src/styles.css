@@ -4,13 +4,18 @@
     box-sizing: border-box;
 }
 
+html {
+    --grad-color: linear-gradient(90deg,rgba(255, 255, 255, 1) 6%, rgba(121, 9, 72, 1) 100%, rgba(106, 0, 255, 1) 100%);
+    --grad-color2: linear-gradient(90deg,rgba(189, 83, 124, 1) 0%, rgba(121, 9, 72, 1) 35%, rgba(106, 0, 255, 1) 100%);
+}
+
 body {
     display: flex;
     flex-direction: column;
     align-items: center;
     font-family: "Adwaita Mono", monospace;
-    background: #bd537c;
-    background: linear-gradient(90deg,rgba(189, 83, 124, 1) 0%, rgba(121, 9, 72, 1) 35%, rgba(106, 0, 255, 1) 100%);
+    background: #FFFFFF;
+    background: var(--grad-color), var(--grad-color2);
 }
 
 header {
@@ -51,4 +56,10 @@ nav button {
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
+}
+
+#menu {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--grad-color2);
 }
