@@ -92,7 +92,7 @@ export function load_contact() {
         }
 
         if (emailLink) {
-            emailLink.addEventListener('click', (e) => {
+            emailLink.addEventListener('click', () => {
                 console.log('Email link clicked');
             });
         }
